@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Bullying - Bersama Kita Bisa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .hero-section {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('BULI.jpg');
+            background-size: contain;   
+            background-repeat: no-repeat;
+            background-position: center;
+            background-attachment: fixed;
+            background-color:#ff8800;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+            transform: translateY(0);
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+        
+        .floating {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+    </style>
+</head>
+<body class="text-white">
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center py-20">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white pulse-animation">
+                    STOP BULLYING
+                </h1>
+                <p class="text-xl md:text-2xl mb-8 text-gray-200">
+                    Bersama kita ciptakan lingkungan yang aman dan nyaman untuk semua
+                </p>
+                <div class="flex flex-wrap justify-center gap-4 mb-12">
+                    <button class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-hand-paper mr-2"></i>Laporkan Bullying
+                    </button>
+                    <button class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full text-lg font-semibold transition duration-300 transform hover:scale-105">
+                        <i class="fas fa-heart mr-2"></i>Dukung Korban
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="py-20 bg-white bg-opacity-10 backdrop-blur-sm">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Mengapa Kita Harus Peduli?</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-6 bg-white bg-opacity-20 rounded-xl card-hover">
+                    <div class="text-4xl font-bold text-red-400 mb-4">68%</div>
+                    <p class="text-lg">Anak Indonesia pernah mengalami bullying</p>
+                </div>
+                <div class="text-center p-6 bg-white bg-opacity-20 rounded-xl card-hover">
+                    <div class="text-4xl font-bold text-red-400 mb-4">42%</div>
+                    <p class="text-lg">Korban bullying mengalami trauma berkepanjangan</p>
+                </div>
+                <div class="text-center p-6 bg-white bg-opacity-20 rounded-xl card-hover">
+                    <div class="text-4xl font-bold text-green-400 mb-4">90%</div>
+                    <p class="text-lg">Kasus bullying bisa dicegah dengan dukungan bersama</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- People Visual Section -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Bersatu Melawan Bullying</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Card 1 -->
+                <div class="bg-white bg-opacity-15 rounded-2xl p-6 text-center card-hover floating">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-red-400 flex items-center justify-center">
+                        <i class="fas fa-exclamation-circle text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Apa itu Bullying?</h3>
+                    <p class="text-gray-200">
+                        Bullying adalah tindakan menyakiti orang lain, baik fisik maupun mental, 
+                        yang dilakukan secara berulang dengan tujuan merendahkan.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white bg-opacity-15 rounded-2xl p-6 text-center card-hover floating" style="animation-delay: 2s;">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-yellow-400 flex items-center justify-center">
+                        <i class="fas fa-brain text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dampak Bullying</h3>
+                    <p class="text-gray-200">
+                        Bullying bisa menyebabkan trauma, rasa takut, menurunnya prestasi, hingga gangguan kesehatan mental.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white bg-opacity-15 rounded-2xl p-6 text-center card-hover floating" style="animation-delay: 4s;">
+                    <div class="w-32 h-32 mx-auto mb-4 rounded-full bg-green-400 flex items-center justify-center">
+                        <i class="fas fa-hands-helping text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Cara Mencegah</h3>
+                    <p class="text-gray-200">
+                        Pencegahan bullying bisa dilakukan dengan dukungan keluarga, guru, teman sebaya, dan lingkungan sekitar.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Group Photo -->
+            <div class="bg-white bg-opacity-20 rounded-2xl p-8 text-center card-hover">
+              <div class="w-full h-64 md:h-96 rounded-xl overflow-hidden mb-6">
+                <img 
+                  src="BULI.jpg" 
+                  alt="Gambar Bullying" 
+                  class="w-full h-full object-cover cursor-pointer hover:opacity-80 transition"
+                  onclick="openModal(this.src)"
+                />
+              </div>
+            </div>
+
+            <!-- Modal (default hidden) -->
+            <div id="imageModal" 
+                 class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50">
+              <div class="relative">
+                <img id="modalImage" src="" class="max-h-[90vh] max-w-[90vw] rounded-xl shadow-xl" />
+                <button 
+                  onclick="closeModal()" 
+                  class="absolute top-2 right-2 bg-white rounded-full px-3 py-1 shadow">
+                  ✕
+                </button>
+              </div>
+            </div>
+
+            <script>
+              function openModal(src) {
+                document.getElementById("modalImage").src = src;
+                document.getElementById("imageModal").classList.remove("hidden");
+              }
+
+              function closeModal() {
+                document.getElementById("imageModal").classList.add("hidden");
+              }
+            </script>
+        </div>
+    </section>
+
+    <!-- Action Steps -->
+    <section class="py-20 bg-white bg-opacity-10">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Langkah-Langkah Melawan Bullying</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white bg-opacity-15 p-6 rounded-xl text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-red-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-eye text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Waspada</h3>
+                    <p>Kenali tanda-tanda bullying di sekitar kamu</p>
+                </div>
+                <div class="bg-white bg-opacity-15 p-6 rounded-xl text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-blue-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-comment text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Bicara</h3>
+                    <p>Laporkan pada guru atau orang tua</p>
+                </div>
+                <div class="bg-white bg-opacity-15 p-6 rounded-xl text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-green-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-hands-helping text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Dukung</h3>
+                    <p>Beri dukungan pada korban bullying</p>
+                </div>
+                <div class="bg-white bg-opacity-15 p-6 rounded-xl text-center card-hover">
+                    <div class="w-16 h-16 mx-auto mb-4 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <i class="fas fa-heart text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2">Peduli</h3>
+                    <p>Jadilah teman yang baik untuk semua</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black bg-opacity-50 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-6">
+         
+            </div>
+            <p class="text-gray-400">© WEB DI BUAT OLEH BRAJA.</p>
+            <p class="text-gray-400 mt-2">STOP BULI</p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple animation for engagement
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.card-hover, .floating').forEach(el => {
+                el.style.opacity = 0;
+                el.style.transform = 'translateY(50px)';
+                el.style.transition = 'all 0.8s ease-out';
+                observer.observe(el);
+            });
+
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                button.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
